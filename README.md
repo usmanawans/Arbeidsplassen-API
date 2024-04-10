@@ -3,11 +3,8 @@
 ### Oppgave for backend-utviklere:
 
 * Lag en backend som viser antall annonser som inneholder "kotlin" vs "java" pr uke siste halvår.
-
 * Besvares med Kotlin.
-
 * Det er tilstrekkelig at output vises som prettyfied json på kommandolinjen.
-
 * Besvarelsen skal inneholde tester og en README.md som beskriver løsningen din.
 
 
@@ -30,8 +27,10 @@
 ```mermaid
 flowchart TD
     RestConfig --> AdsService
-    AdsService --> CommandLineRunner
-    AdsService --> AdsRestController
+    AdsService --> CalenarService
+    CalenarService --> StatisticsService
+    StatisticsService --> CommandLineRunner
+    StatisticsService --> AdsRestController
 
     CommandLineRunner(CommandLineRunner)-->id1(CommandLine)
     AdsRestController(AdsRestController)-->id2(Frontend)
@@ -43,7 +42,6 @@ flowchart TD
 ### Utviklingsmiljø og forutsetninger
 
 * OpenJDK 21
-
 * Maven
 
 ### Kjør tester
