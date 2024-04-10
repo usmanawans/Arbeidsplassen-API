@@ -22,7 +22,7 @@
 | JIRA-8 | Lage frontend nlod.no i Aksel |
 
 
-### Diagram utkast
+### Diagram
 
 ```mermaid
 flowchart TD
@@ -58,5 +58,37 @@ mvn spring-boot:run
 
 ### Eksempel resultat
 
+```javascript
+[
+    ...,
+    {
+        "weekNr": 9,
+        "startWeek": "2024-02-26T01:27:33.068+00:00",
+        "endWeek": "2024-03-04T01:27:33.068+00:00",
+        "year": 2024,
+        "kotlinCounter": 1,
+        "javaCounter": 3,
+        "period": "[2024-02-26,2024-03-04)"
+    },
+    {
+        "weekNr": 10,
+        "startWeek": "2024-03-04T01:27:33.068+00:00",
+        "endWeek": "2024-03-11T01:27:33.068+00:00",
+        "year": 2024,
+        "kotlinCounter": 0,
+        "javaCounter": 3,
+        "period": "[2024-03-04,2024-03-11)"
+    },
+    {
+        "weekNr": 11,
+        "startWeek": "2024-03-11T01:27:33.068+00:00",
+        "endWeek": "2024-03-18T01:27:33.068+00:00",
+        "year": 2024,
+        "kotlinCounter": 1,
+        "javaCounter": 7,
+        "period": "[2024-03-11,2024-03-18)"
+    },,
+    ... 
+]
 
 ```
