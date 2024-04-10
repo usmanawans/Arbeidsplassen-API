@@ -22,12 +22,12 @@ class AdsService(
 
         for(page in 1..totalPages) {
             val respons = restClient.get()
-                    .uri("/ads?size=1000&published=$weeklyDuration&page=$page")
+                    .uri("/ads?published=$weeklyDuration&page=$page")
                     .retrieve().toEntity(AdsResponse::class.java)
 
             respons.body?.let { advertisements.addAll(it.content) }
         }
-        logger.info("Total ${advertisements.size} found for week $weeklyDuration")
+        logger.info("Getting data for week $weeklyDuration")
         return advertisements;
     }
 
@@ -36,7 +36,7 @@ class AdsService(
         var pageNr = 1
 
         val respons = restClient.get()
-                .uri("/ads?size=1000&?published=$weeklyDuration")
+                .uri("/ads?published=$weeklyDuration")
                 .retrieve().toEntity(AdsResponse::class.java)
 
         pageNr = respons.body?.totalPages ?: 1
