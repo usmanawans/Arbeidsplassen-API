@@ -58,6 +58,8 @@ mvn spring-boot:run
 
 ### Eksempel resultat
 
+Følgende resultat er tilgjengelig på både `konsoll` og  [localhost:8080](http://localhost:8080/).
+
 ```javascript
 [
     ...,
