@@ -5,7 +5,7 @@
 * Lag en backend som viser antall annonser som inneholder "kotlin" vs "java" pr uke siste halvår.
 * Besvares med Kotlin.
 * Det er tilstrekkelig at output vises som prettyfied json på kommandolinjen.
-* Besvarelsen skal inneholde tester og en README.md som beskriver løsningen din.
+* Besvarelsen skal inneholde tester og en README.md som beskriver løsningen.
 
 
 ### Planlegging og fremgangsmåte
